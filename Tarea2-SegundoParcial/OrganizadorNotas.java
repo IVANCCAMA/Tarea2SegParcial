@@ -13,6 +13,10 @@ public class OrganizadorNotas{
         notas = new double[num];
         aux = 0;
         promedioDeNotas = 0;
+        promedioDeNotasMayores = 0;
+        estReprobados = 0;
+        estAprobados = 0;
+        mayorNota = 0;
     }
     
     public void AñadirNota(double nota){
@@ -59,7 +63,7 @@ public class OrganizadorNotas{
         }
         return estAprobados;
     }
-    public double MayorNota2(){
+    public double MayorNota(){
         for(int i = 0; i<notas.length; i++){
             if(notas[i] > mayorNota){
                 mayorNota = notas[i];
